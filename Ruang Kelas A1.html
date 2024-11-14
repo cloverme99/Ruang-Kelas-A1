@@ -3,112 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>YAYASAN UMMUL QURO' SEMARANG</title>
+    <title>YAYASAN UMMUL QURO'</title>
+    <link rel="icon" href="logo.jpeg" type="image/x-icon" />
     <style>
-      /* Mengatur tampilan dasar */
       body {
+        font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
-        font-family: Arial, sans-serif;
         display: flex;
         flex-direction: column;
-        height: 100vh; /* Memastikan konten penuh layar */
-      }
-
-      /* Styling untuk header */
-      header {
-        background-color: #4caf50; /* Warna latar belakang */
-        color: white; /* Warna teks */
-        padding: 10px 20px;
-        display: flex;
         align-items: center;
-        justify-content: flex-start; /* Logo di kiri, teks di kanan */
-      }
-
-      .logo {
-        width: 80px;
-        height: 80px;
-        margin-right: 20px; /* Jarak antara logo dan teks */
-        border-radius: 10px;
-      }
-
-      h1 {
-        margin: 0;
-        font-size: 36px;
-      }
-
-      /* Kontainer untuk PDF */
-      .pdf-container {
-        flex: 1; /* Membuat kontainer memenuhi ruang yang tersisa */
-        display: flex;
         justify-content: center;
-        align-items: center;
-        width: 100%;
       }
-
-      embed {
-        width: 100%;
-        height: 100%;
+      iframe {
+        width: 80%;
+        height: 90vh;
+        border: none;
       }
-
-      /* Footer */
-      footer {
-        background-color: #333; /* Warna latar belakang footer */
-        color: white; /* Warna teks */
+      header {
+        width: 100%;
+        position: relative;
         padding: 10px 20px;
-        font-size: 14px;
-        display: flex;
-        justify-content: flex-end; /* Teks berada di kanan */
-        align-items: center;
+        background-color: #4caf50;
+        color: white;
+        text-align: center; /* Tulisan berada di tengah secara horizontal */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
       }
-
-      /* Responsivitas untuk layar kecil */
-      @media (max-width: 768px) {
-        header {
-          flex-direction: column; /* Logo dan teks vertikal */
-          align-items: center; /* Pusatkan elemen di layar kecil */
-          text-align: center;
-        }
-
-        .logo {
-          margin: 0 0 10px 0; /* Jarak bawah untuk logo */
-        }
-
-        h1 {
-          font-size: 28px;
-        }
+      header img {
+        height: 60px;
+        position: absolute;
+        left: 50px;
       }
-
-      @media (max-width: 480px) {
-        .logo {
-          width: 60px; /* Logo lebih kecil di layar kecil */
-          height: 60px;
-        }
-
-        h1 {
-          font-size: 24px;
-        }
-
-        footer {
-          font-size: 8px; /* Ukuran teks lebih kecil di perangkat kecil */
-          width: 19px;
-        }
+      header h1 {
+        font-size: 1.8em;
+        margin: 0;
+        line-height: 60px; /* Menyesuaikan tinggi logo agar teks sejajar */
       }
     </style>
   </head>
   <body>
-    <!-- Header -->
     <header>
-      <img src="logo.jpeg" alt="Logo" class="logo" />
-      <h1>DATA INVENTARIS YAYASAN UMMUL QURO' SEMARANG</h1>
+      <img src="logo.jpeg" alt="Website Logo" />
+      <h1>YAYASAN UMMUL QURO' SEMARANG</h1>
     </header>
-
-    <!-- Kontainer untuk PDF -->
-    <div class="pdf-container">
-      <embed src="Ruang Kelas A1.pdf" type="application/pdf" />
-    </div>
-
-    <!-- Footer -->
-    <footer>&copy; 2024 ZIIYOU</footer>
+    <iframe src="Ruang Kelas A1.pdf"></iframe>
   </body>
 </html>
